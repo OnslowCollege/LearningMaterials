@@ -1,0 +1,188 @@
+/* @theme onslow */
+
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --color-onslow-green: #135d56;
+    --color-onslow-red: #800000;
+
+    --color-background: #fff;
+    --color-foreground: #333;
+    --color-highlight: var(--color-onslow-red);
+}
+
+/* Base */
+
+a {
+    color: var(--color-onslow-red);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    /* Font */
+    font-family: "Lexend", sans-serif;
+    color: var(--color-onslow-green);
+}
+
+footer {
+    margin-left: 50px;
+}
+
+.columns {
+    /* Layout */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.columns div:nth-child(2) img {
+    /* Layout */
+    float: right;
+}
+
+/* Section */
+
+section {
+    /* Layout */
+    justify-content: flex-start;
+    padding-top: 120px;
+
+    /* Font */
+    font-family: "Figtree", sans-serif;
+}
+
+section h1 {
+    /* Layout */
+    background-color: var(--color-onslow-green);
+    left: 0;
+    margin: 0;
+    padding: 20px;
+    padding-left: 75px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    /* Font */
+    color: white;
+}
+
+section h2:first-of-type {
+    /* Layout */
+    margin: 0;
+    padding: 20px;
+    padding-right: 75px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+
+    /* Font */
+    color: white;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.6em;
+    text-align: right;
+}
+
+/* Title slide */
+
+section.title {
+    /* Layout */
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+section.title table:first {
+    width: 1000px;
+}
+
+section.title table:first-of-type {
+    width: 100%;
+}
+
+section.title table:first-of-type td {
+    width: 20%;
+    background-color: white;
+    outline: 1px solid white;
+}
+
+section.title table:first-of-type th {
+    display: none;
+}
+
+section.title th {
+    /* Layout */
+    background-color: var(--color-onslow-red);
+
+    /* Font */
+    color: white;
+}
+
+section.title h1,
+section.title h2 {
+    all: unset;
+
+    /* Layout */
+    margin-bottom: -40px;
+
+    /* Font */
+    color: var(--color-onslow-green);
+    font-family: "Lexend", sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+section.title h2 {
+    /* Layout */
+    margin-bottom: 20px;
+
+    /* Font */
+    color: var(--color-onslow-red);
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Division */
+
+section.division {
+    /* Layout */
+    background-color: var(--color-onslow-green);
+    justify-content: center;
+
+    --paginate-color: white;
+}
+
+section.division footer {
+    /* Font */
+    color: white;
+}
+
+section.division footer a {
+    /* Font */
+    color: white;
+    font-weight: 600;
+}
+
+section.division h1,
+section.division h2 {
+    all: unset;
+
+    /* Layout */
+    padding-left: 0;
+    position: relative;
+
+    /* Font */
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+section.division h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
