@@ -1,44 +1,34 @@
 ---
 marp: true
+footer: |
+  Copyright © 2025 by Onslow College. Available under the [CC BY 3.0 NZ](https://github.com/OnslowCollege/LearningMaterials/blob/main/LICENSE.md) license on [GitHub](https://github.com/OnslowCollege/LearningMaterials).
 paginate: true
-_paginate: skip
-style: |
-  .columns {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  h2 {
-    margin-top: 0;
-  }
-
-  section {
-    justify-content: flex-start;
-  }
-
-  section.title-page {
-    justify-content: center;
-    background: linear-gradient(180deg, rgba(154,228,255,1) 0%, rgba(255,255,255,1) 50%);
-  }
-
-  .quote {
-    font-family: serif;
-    font-size: 1.5em;
-    font-style: italic;
-  }
+theme: onslow
+title: Introduction to programming
 ---
 
-<!-- _class: title-page -->
+<!-- _class: title -->
+<!-- _paginate: skip -->
 
-# Slideshow title
+# Māori title
 
-Copyright © 2024 by Onslow College.
-Available under the [CC BY 3.0 NZ](https://github.com/OnslowCollege/LearningMaterials/blob/main/LICENSE.md) license on [GitHub](https://github.com/OnslowCollege/LearningMaterials).
+## English title
+
+| | | | |
+| --: | :-- | --: | :-- |
+| **AS** | 99999 | **Credits** | 9 |
+| **Level** | 9 | **Type** | Internal |
+| **Date published** | 9 Oct 2029 | **Version** | 9 |
+
+| Paetae • A | Kaiaka • M | Kairangi • E |
+| :-: | :-: | :-: |
+| Do the thing | Do it better | Do it best |
 
 ---
 
-# Koronga ako • Learning intentions
+# Learning intentions
+
+## Koronga aku
 
 **In this lesson, you will learn**:
 
@@ -46,7 +36,7 @@ Available under the [CC BY 3.0 NZ](https://github.com/OnslowCollege/LearningMate
 2. two
 3. three
 
-## Paearu angitū • Success criteria
+## Success criteria • Paearu angitū
 
 **You will know that you have completed the intended learning when**:
 
@@ -56,7 +46,17 @@ Available under the [CC BY 3.0 NZ](https://github.com/OnslowCollege/LearningMate
 
 ---
 
-# Slide 1
+<!-- _class: division -->
+
+# Māori title
+
+## English title
+
+---
+
+# English title 1
+
+## Māori title 1
 
 Simple slide with some bullet points.
 
@@ -66,7 +66,9 @@ Simple slide with some bullet points.
 
 ---
 
-# Slide 2
+# English title 2
+
+## Māori title 2
 
 More complex slide with some information up top, some bullet points on the left, and a code sample on the right.
 
@@ -74,7 +76,7 @@ More complex slide with some information up top, some bullet points on the left,
 
 <div>
 
-## Subheading
+### Subheading
 
 - One
 - Two
@@ -83,7 +85,7 @@ More complex slide with some information up top, some bullet points on the left,
 </div>
 <div>
 
-## Code Sample
+### Code Sample
 
 ```py
 from random import randint
@@ -96,7 +98,7 @@ print(randint(0, 100))
 
 ---
 
-<!-- _class: title-page -->
+<!-- _class: division -->
 
 # Whakamutunga
 
@@ -104,7 +106,9 @@ print(randint(0, 100))
 
 ---
 
-# Paearu angitū • Success criteria
+# Success criteria
+
+## Paearu angitū
 
 Now that this lesson has concluded, think about how confident you are in your understanding. Do you feel that:
 
