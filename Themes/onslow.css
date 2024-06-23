@@ -97,11 +97,7 @@ section.title {
     padding-top: 50px;
 }
 
-section.title table:first {
-    width: 1000px;
-}
-
-section.title table:first-of-type {
+section.title table {
     width: 100%;
 }
 
@@ -111,6 +107,9 @@ section.title table:first-of-type td {
     outline: 1px solid white;
 }
 
+section.title table:nth-of-type(2) td {
+    width: 350px;
+}
 section.title table:first-of-type th {
     display: none;
 }
