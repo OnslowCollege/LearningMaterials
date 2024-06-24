@@ -24,9 +24,6 @@ jobs:
       - name: Ensure build dir exists
         run: mkdir -p build
 
-      - name: Copy Global images directory (if exists)
-        run: if [[ -d Global ]]; then cp -R Global build/Global; fi
-
       - name: Check if docs folder exists
         id: docs-folder-exists
         run: bash -c "[[ -d docs ]] ; echo \"has_docs=\$?\" >> \"$GITHUB_OUTPUT\""
