@@ -35,13 +35,13 @@ jobs:
         if: steps.docs-folder-exists.outputs.has_docs == '0'
         uses: docker://marpteam/marp-cli:v4.3.0
         with:
-          args: -I docs/ -o build/docs/
+          args: -I docs/ -o build/docs/ --html --theme themes/onslow.css
         env:
           MARP_USER: root:root
 
       - name: Copy Global images directory (if exists)
         if: steps.docs-folder-exists.outputs-has_docs == '0'
-        run: cp -R docs/img build/docs/img/; fi
+        run: cp -R docs/img build/docs/img/
 
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}

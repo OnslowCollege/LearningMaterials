@@ -17,5 +17,5 @@ These learning materials are made available under a [CC BY 3.0 NZ license](https
 
 ## Third-party licenses
 
-- Visual Studio Code product icons (`Global/img/vscode/`) are licensed under the [CC BY 4.0](https://github.com/microsoft/vscode-icons/blob/main/LICENSE). © Microsoft and project contributors on [GitHub repository](https://github.com/microsoft/vscode-icons)
-- AREPL icon (`Global/img/arepl.png`) is licensed under the [MIT License](https://github.com/Almenon/AREPL-vscode/blob/master/LICENSE). © Almenon on [GitHub repository](https://github.com/Almenon/AREPL-vscode)
+- Visual Studio Code product icons (`global/img/vscode/`) are licensed under the [CC BY 4.0](https://github.com/microsoft/vscode-icons/blob/main/LICENSE). © Microsoft and project contributors on [GitHub repository](https://github.com/microsoft/vscode-icons)
+- AREPL icon (`global/img/arepl.png`) is licensed under the [MIT License](https://github.com/Almenon/AREPL-vscode/blob/master/LICENSE). © Almenon on [GitHub repository](https://github.com/Almenon/AREPL-vscode)
