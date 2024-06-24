@@ -31,6 +31,14 @@ jobs:
         id: docs-folder-exists
         run: bash -c "[[ -d docs ]] ; echo \"has_docs=\$?\" >> \"$GITHUB_OUTPUT\""
 
+      - name: Create docs folder if it doesn't exist
+        if: steps.docs-folder-exists.outputs.has_docs == '0'
+        run: mkdir build/docs
+
+      - name: Copy images images directory
+        if: steps.docs-folder-exists.outputs.has_docs == '0'
+        run: if [[ -d docs/img ]]; then cp -R docs/img build/docs/img; fi
+
       - name: Marp Build (docs folder, if exists)
         if: steps.docs-folder-exists.outputs.has_docs == '0'
         uses: docker://marpteam/marp-cli:v3.4.0
@@ -38,10 +46,6 @@ jobs:
           args: -I docs/ -o build/docs/ --html --theme Themes/onslow.css
         env:
           MARP_USER: root:root
-
-      - name: Copy images images directory (if exists)
-        if: steps.docs-folder-exists.outputs-has_docs == '0'
-        run: if [[ -d docs/img ]]; then cp -R docs/img build/docs/img; fi
 
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
