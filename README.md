@@ -4,12 +4,17 @@ Learning materials for Onslow College Digital Technologies in 2025.
 
 He rauemi ako mō te akomanga Hangarau Matihiko i te tau 2025.
 
-## How to use
+## How to view
 
-1. Install the [Onslow College Extensions Pack](https://marketplace.visualstudio.com/items?itemName=OnslowCollege.onslow-college-extension-pack)
-2. Download or clone this repository to your computer
-3. To view a slideshow, click on the file in the Explorer sidebar
-4. To **edit** a slideshow, open a file then double click on the slideshow's preview
+These slides will be linked from the [Onslow College Digital Technologies website](https://sites.google.com/onslow.school.nz/digital-tech) and in Google Classroom assignments
+
+## How to edit
+
+1. Install Visual Studio Code, then install the [Onslow College Extensions Pack](https://marketplace.visualstudio.com/items?itemName=OnslowCollege.onslow-college-extension-pack)
+2. Clone `https://github.com/OnslowCollege/OnslowCollege.github.io` to your computer
+3. In Visual Studio Code:
+   1. To view a slideshow, click on the file in the Explorer sidebar
+   2. To **edit** a slideshow, open a file then double click on the slideshow's preview
 
 ## License
 
