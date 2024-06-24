@@ -39,9 +39,9 @@ jobs:
         env:
           MARP_USER: root:root
 
-      - name: Copy Global images directory (if exists)
-        if: steps.docs-folder-exists.outputs-has_docs == '0'
-        run: cp -R docs/img build/docs/img
+      # - name: Copy Global images directory (if exists)
+      #   if: steps.docs-folder-exists.outputs-has_docs == '0'
+      #   run: cp -R docs/img build/docs/img
 
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
