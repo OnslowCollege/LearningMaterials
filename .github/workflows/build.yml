@@ -41,7 +41,7 @@ jobs:
 
       - name: Copy Global images directory (if exists)
         if: steps.docs-folder-exists.outputs-has_docs == '0'
-        run: cp -R docs/img build/docs/img/
+        run: cp -R docs/img build/docs/img
 
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
@@ -50,3 +50,11 @@ jobs:
           source-dir: ./build/
           preview-branch: gh-pages
           umbrella-dir: pr-preview
+
+      - name: Deploy production
+          if: ${{ github.event_name == 'push' }}
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            branch: gh-pages
+            folder: ./build/
+            clean-exclude: pr-preview/
