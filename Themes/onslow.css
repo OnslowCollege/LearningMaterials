@@ -29,6 +29,11 @@ h4 {
     color: var(--color-onslow-green);
 }
 
+hr {
+    margin: 0;
+    padding: 1px;
+}
+
 footer {
     margin-left: 50px;
 }
@@ -38,6 +43,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
+    margin-top: 1em;
 }
 
 .columns div:nth-child(2) img {
